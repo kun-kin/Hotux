@@ -1,0 +1,227 @@
+.about-restaurant {
+    .content {
+        margin-top: 70px;
+        @media(max-width: 991px) {
+            margin: 0;
+        }
+    }
+    .image {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.menu-food {
+    background: url('../../images/menubg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 70px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .title-box.text-light {
+        h2,
+        p {
+            color: white;
+        }
+    }
+    .menu-outer {
+        position: relative;
+        z-index: 1;
+        .filter {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            .list-line {
+                li {
+                    display: inline-block;
+                    a {
+                        color: #333;
+                        border: 1px solid #f1f1f1;
+                        padding: 8px 20px 10px;
+                        border-radius: 20px;
+                        background: #fff;
+                        margin: 0 3px;
+                        display: inline-block;
+                        text-transform: capitalize;
+                    }
+                    &:hover {
+                        a {
+                            background: #fe4e37;
+                            color: #fff;
+                            border-color: #fe4e37;
+                        }
+                    }
+                }
+                li.active {
+                    a {
+                        background: #fe4e37;
+                        color: #fff;
+                        border-color: #fe4e37;
+                    }
+                }
+            }
+        }
+        .list-menu {
+            .menu-item {
+                background: #fff;
+                padding: 15px;
+                width: 100%;
+                margin-bottom: 30px;
+                position: relative;
+                .menu-image {
+                    width: 68px;
+                    float: left;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    @media(max-width:567px) {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+                }
+                .menu-content {
+                    padding-left: 85px;
+                    span {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 21px;
+                        color: #fff;
+                        font-weight: 600;
+                        height: 100%;
+                        background: #fe4e37;
+                        padding: 30px 0;
+                        width: 14%;
+                        text-align: center;
+                        @media(max-width: 567px) {
+                            position: relative;
+                            width: 100%;
+                            display: inline-block;
+                            padding: 5px;
+                        }
+                    }
+                    p {
+                        margin-bottom: 0;
+                    }
+                    @media(max-width:567px) {
+                        text-align: center;
+                        padding-left: 0;
+                        p {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.speciality {
+    &-outer {
+        .special-item {
+            padding: 30px;
+            box-shadow: 0px 0px 15px #cccccc57;
+            .special-image {
+                position: relative;
+                padding: 0 30px;
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+                .special-tag {
+                    height: 80px;
+                    width: 80px;
+                    background: #fe4e37;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 24px;
+                    line-height: 3.0;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    position: absolute;
+                    right: 50px;
+                    bottom: 0;
+                    span {
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .special-content {
+                padding-top: 30px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.reservation {
+    background: url('../../images/reservationbg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .7);
+    }
+    &-box {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        .reservation-image {
+            width: 50%;
+            img {
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .reservation-form {
+            width: 50%;
+            padding: 27px 30px;
+            background: #fff;
+            input {
+                &::placeholder {
+                    text-transform: capitalize;
+                }
+            }
+            .comment-btn {
+                text-align: right;
+            }
+        }
+        @media(max-width:768px) {
+            flex-direction: column;
+            .reservation-image {
+                display: none;
+            }
+            .reservation-form {
+                width: 100%;
+            }
+        }
+        @media(max-width:567px) {
+            width: 100%;
+        }
+    }
+}

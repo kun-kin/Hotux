@@ -1,0 +1,18 @@
+.mm-menu {
+    display: block;
+    @media (max-width: 400px) {
+        max-width: 300px;
+    }
+}
+
+.mm-menu a,
+.mm-menu a:active,
+.mm-menu a:hover,
+.mm-menu a:link,
+.mm-menu a:visited {
+    text-transform: capitalize;
+}
+
+.mm-menu .mm-panel .menu-list li a i {
+    display: none;
+}

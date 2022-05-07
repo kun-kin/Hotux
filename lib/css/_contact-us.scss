@@ -1,0 +1,92 @@
+.contact {
+    .contact-infor {
+        margin-bottom: 50px;
+        .infor-item {
+            position: relative;
+            background: #343a40;
+            padding: 30px 40px;
+            margin-bottom: 30px;
+            min-height: 110px;
+            .infor-icon {
+                position: absolute;
+                color: #fff;
+                font-size: 48px;
+                left: 10%;
+                top: 20%;
+            }
+            .infor-content {
+                padding-left: 50px;
+                p {
+                    margin: 0;
+                    color: white;
+                }
+            }
+        }
+        .infor-item-1 {
+            background-color: var(--theme-color);
+        }
+    }
+    .contact-support {
+        margin-bottom: 50px;
+        .support-item {
+            margin-bottom: 30px;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .contact-map {
+        .map {
+            height: 100%;
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .contact-form {
+            background: #fe4e37;
+            padding: 30px;
+            h3 {
+                color: #fff;
+                margin-bottom: 30px;
+            }
+            input,
+            textarea {
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                color: #fff;
+                padding: 10px;
+                width: 100%;
+                border-radius: 0%;
+                &:focus {
+                    box-shadow: none;
+                    background-color: white;
+                    color: #333;
+                }
+                &::placeholder {
+                    color: #fff;
+                    text-transform: capitalize;
+                }
+            }
+            textarea {
+                border-radius: 0px;
+                resize: vertical;
+                height: 120px;
+            }
+            .comment-btn {
+                text-align: right;
+                .btn1 {
+                    background: #fff;
+                    color: #333;
+                    width: auto;
+                    &:hover {
+                        color: #fff;
+                        background: #333;
+                        border-color: #333;
+                    }
+                }
+            }
+        }
+    }
+}

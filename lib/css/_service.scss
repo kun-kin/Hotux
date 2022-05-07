@@ -1,0 +1,47 @@
+.service {
+    .service-item {
+        position: relative;
+        margin-bottom: 30px;
+        overflow: hidden;
+        .image {
+            img {
+                max-width: 100%;
+                transition: all ease-in-out 0.5s;
+                width: 100%;
+            }
+        }
+        .content {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            text-align: center;
+            background: #fff;
+            width: calc(100% - 60px);
+            padding: 20px 0;
+            z-index: 2;
+            h4 {
+                margin-bottom: 5px;
+            }
+            p {
+                margin-bottom: 0;
+                font-style: italic;
+            }
+        }
+        &:hover {
+            .image {
+                img {
+                    transform: scale(1.1);
+                    transition: all ease-in-out 0.5s;
+                }
+            }
+            .content {
+                h4 {
+                    a {
+                        margin-bottom: 5px;
+                        color: #fe4e37;
+                    }
+                }
+            }
+        }
+    }
+}

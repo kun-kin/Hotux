@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import "header";
+@import "main";
+@import "footer";
+@import "mmenu";
+@import "rooms";
+@import "details-rooms";
+@import "service";
+@import "details-service";
+@import "about-us";
+@import "contact-us";
+@import "details-news";
+@import "restaurant";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --theme-color: #fe4e37;
+    --text-color-1: #343a40;
+    --text-color-2: #666;
+    --body-color: #212529;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--body-color);
+    text-align: left;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+ul {
+    margin-bottom: 0;
+    list-style-type: none;
+    li {
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        color: #343a40;
+        position: relative;
+        padding: 0;
+    }
+}
+
+a {
+    color: #343a40;
+    transition: all ease-in-out 0.4s;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: var(--text-color-1);
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 15px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 36px;
+    @media(max-width: 991px) {
+        font-size: 28px;
+    }
+    @media(max-width:768px) {
+        font-size: 24px;
+    }
+}
+
+h3 {
+    font-size: 26px;
+    @media(max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+span {
+    color: var(--theme-color);
+}
+
+section {
+    padding: 89px 0 100px;
+    position: relative;
+    background: #fff;
+}
+
+.btn {
+    padding: 12px 30px 12px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    display: inline-block;
+    transition: all ease-in-out 0.3s;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn {
+    @media(max-width: 1100px) {
+        padding: 12px 18px;
+    }
+}
+
+.btn1 {
+    background: #fe4e37;
+    color: #fff;
+    border-color: #fe4e37;
+    &:hover {
+        border-color: var(--theme-color);
+        background-color: #fff;
+        color: var(--theme-color);
+    }
+}
+
+.btn2 {
+    background: var(--text-color-1);
+    color: #fff;
+    border-color: var(--text-color-1);
+    &:hover {
+        border-color: var(--text-color-1);
+        background-color: #fff;
+        color: var(--text-color-1);
+    }
+}
+
+.title-box {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 68px;
+    position: relative;
+    z-index: 1;
+    span {
+        color: var(--theme-color);
+    }
+    @media(max-width:991px) {
+        width: 90%;
+    }
+    @media(max-width:567px) {
+        width: 100%;
+    }
+}
+
+.title-box.text-light {
+    h2,
+    p {
+        color: white;
+    }
+}
+
+.text1 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+}

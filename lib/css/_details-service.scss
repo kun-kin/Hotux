@@ -1,0 +1,100 @@
+.service-details {
+    .details-content {
+        .title {
+            margin-bottom: 30px;
+        }
+        .details-image {
+            margin-bottom: 30px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .list-sidebar {
+        position: sticky;
+        top: 0;
+        .pretty {
+            position: relative;
+            display: inline-block;
+            margin-right: 0;
+            width: 100%;
+            white-space: nowrap;
+            line-height: 1;
+            margin-bottom: 15px;
+            input {
+                position: absolute;
+                left: 0;
+                top: 0;
+                min-width: 1em;
+                width: 16px;
+                height: 100%;
+                z-index: 2;
+                /* opacity: 0; */
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+            }
+            label {
+                position: initial;
+                display: inline-block;
+                font-weight: 400;
+                margin: 0;
+                text-indent: 1.5em;
+                min-width: calc(1em + 2px);
+                text-transform: capitalize;
+                span.fas {
+                    display: inline;
+                }
+            }
+        }
+        .room-type {
+            margin-bottom: 30px;
+        }
+        .price {
+            margin-bottom: 30px;
+            .value {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                input {
+                    display: inline-block;
+                    border: none;
+                    max-width: 50px;
+                }
+            }
+            .ui-slider-horizontal {
+                height: 6px;
+                .ui-slider-handle {
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    border: 1px solid red;
+                }
+                .ui-state-active {
+                    background-color: var(--theme-color);
+                }
+            }
+        }
+        .infor1 {
+            border: 1px solid #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            i {
+                font-size: 52px;
+                margin-bottom: 20px;
+                display: inline-block;
+                padding: 0;
+            }
+            .phone {
+                font-size: 26px;
+                display: block;
+                margin-bottom: 10px;
+                &:hover {
+                    color: var(--theme-color);
+                }
+            }
+        }
+    }
+}

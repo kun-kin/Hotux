@@ -1,0 +1,166 @@
+.about {
+    .about-para {
+        margin-top: 50px;
+    }
+    .about-image {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .about-image1 {
+        margin-top: 50px;
+    }
+    .about-tag {
+        border: 2px solid #fe4e37;
+        padding: 10px 20px 5px;
+        display: inline-block;
+        position: absolute;
+        left: 45%;
+        bottom: 15%;
+        .tag-no {
+            float: left;
+            span {
+                font-size: 56px;
+                font-weight: 600;
+                line-height: 1.2;
+            }
+        }
+        .tag-infor {
+            padding-left: 70px;
+            span {
+                display: block;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.about-team {
+    .teamSlide {
+        .team-item {
+            position: relative;
+            overflow: hidden;
+            transition: all ease-in-out 0.3s;
+            box-shadow: 0 0 15px #cccccc57;
+            margin-bottom: 30px;
+            &::before {
+                content: '';
+                background: linear-gradient(to top, #fe4e37b8, transparent);
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                transition: all ease-in-out 0.3s;
+                opacity: 0;
+                z-index: 1;
+            }
+            .image {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+            .content {
+                padding: 20px 15px;
+                position: absolute;
+                bottom: -45px;
+                width: 100%;
+                background: #fff;
+                text-align: center;
+                transition: all ease-in-out 0.3s;
+                z-index: 2;
+                h4 {
+                    color: #fe4e37;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                .team-social {
+                    li {
+                        display: inline-block;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            &:hover {
+                .image {
+                    img {
+                        transform: scale(1.2);
+                        transition: all ease-in-out 0.3s;
+                    }
+                }
+                .content {
+                    bottom: 0;
+                    transition: all ease-in-out 0.3s;
+                }
+                &::before {
+                    opacity: 1;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+        }
+    }
+}
+
+.award {
+    position: relative;
+    background: url('../../images/awards.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 150px;
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .title-box.text-light {
+        h2,
+        p {
+            color: white;
+        }
+    }
+    .awardSlide {
+        .award-item {
+            // margin: 0 15px;
+            background: #fff;
+            position: relative;
+            margin-bottom: 40px;
+            z-index: 1;
+            .image {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .content {
+                text-align: center;
+                background: #fe4e37;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 90%;
+                bottom: -40px;
+                padding: 15px 0;
+                h5,
+                p {
+                    color: white;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
